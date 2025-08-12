@@ -50,7 +50,7 @@ const Index = () => {
                 <CardTitle className="flex items-center gap-2"><Workflow className="text-primary" /> Automations</CardTitle>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
-                From lead routing and onboarding to order processing and e‑commerce
+                From lead routing and onboarding to invoice reconciliation — resilient, observable flows using best-in-class tools.
               </CardContent>
             </Card>
             <Card className="hover-scale">
