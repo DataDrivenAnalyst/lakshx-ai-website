@@ -20,7 +20,7 @@ const Index = () => {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Button variant="hero" className="hover-scale" asChild>
-                  <a href="#contact">Book a discovery chat</a>
+                  <a href="mailto:info@lakshx.com?subject=Discovery%20Chat">Book a discovery chat</a>
                 </Button>
                 <Button variant="accent" className="hover-scale" asChild>
                   <a href="#solutions">See capabilities</a>
@@ -30,7 +30,10 @@ const Index = () => {
             </div>
             <div className="relative hidden md:block">
               <div className="absolute inset-0 rounded-2xl bg-gradient-primary opacity-20 blur-3xl" aria-hidden />
-              <img src="/lovable-uploads/46aa0e06-2714-4162-a3b2-ad82bf5415c7.png" alt="Illustration of AI automations, agents, and analytics for SMBs" loading="lazy" decoding="async" className="mx-auto relative z-10 w-full max-w-lg rounded-xl shadow-elegant" sizes="(min-width: 768px) 480px, 100vw" />
+              <figure className="relative z-10">
+                <img src="/lovable-uploads/46aa0e06-2714-4162-a3b2-ad82bf5415c7.png" alt="Illustration of AI automations, agents, and analytics for SMBs" loading="lazy" decoding="async" className="mx-auto w-full max-w-lg rounded-xl shadow-elegant" sizes="(min-width: 768px) 480px, 100vw" />
+                <figcaption className="mt-2 text-xs text-muted-foreground text-center">Credit: Canva</figcaption>
+              </figure>
             </div>
           </div>
         </section>
@@ -47,7 +50,7 @@ const Index = () => {
                 <CardTitle className="flex items-center gap-2"><Workflow className="text-primary" /> Automations</CardTitle>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
-                From lead routing and onboarding to invoice reconciliation — resilient, observable flows using best-in-class tools.
+                From lead routing, onboarding to order processing and ECommerce
               </CardContent>
             </Card>
             <Card className="hover-scale">
@@ -102,10 +105,10 @@ const Index = () => {
         <section id="industries" className="container py-16 md:py-20">
           <header className="mb-6">
             <h2 className="font-display text-3xl md:text-4xl">Built for SMB realities</h2>
-            <p className="text-muted-foreground mt-2 max-w-2xl">We’ve worked across services, retail, tech-enabled ops and more. We integrate with the tools you already use.</p>
+            <p className="text-muted-foreground mt-2 max-w-2xl">We’ve worked across FMCG, garments and textiles, e-commerce, battery equipment, consumer durables and more.</p>
           </header>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 text-sm">
-            {['Professional Services', 'D2C & Retail', 'Healthcare', 'EdTech', 'FinTech', 'Logistics'].map(s => <div key={s} className="rounded-md border bg-card px-3 py-2 text-center text-foreground/80">{s}</div>)}
+            {['FMCG', 'Garments & Textiles', 'E‑commerce', 'Battery Equipment', 'Consumer Durables', 'Professional Services'].map(s => <div key={s} className="rounded-md border bg-card px-3 py-2 text-center text-foreground/80">{s}</div>)}
           </div>
         </section>
 
@@ -113,10 +116,18 @@ const Index = () => {
         <section id="about" className="container py-16 md:py-20">
           <div className="grid md:grid-cols-2 gap-10 items-start">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl">Why LakshX</h2>
+              <h2 className="font-display text-3xl md:text-4xl">Why Laksh<span className="text-[hsl(var(--accent))]">X</span></h2>
               <p className="mt-4 text-muted-foreground max-w-prose">
-                We’re a hands-on team combining product thinking with data and engineering depth. We avoid shiny-object hype and focus on durable wins: reduced manual work, faster cycles, happier customers.
+                We’re a hands-on team combining solution thinking with data and engineering depth. We avoid shiny-object hype and focus on durable wins: reduced manual work, faster cycles, happier customers.
               </p>
+              <div className="mt-4">
+                <h3 className="font-medium">Why SMBs Choose Laksh<span className="text-[hsl(var(--accent))]">X</span></h3>
+                <ul className="mt-2 text-sm text-muted-foreground space-y-1">
+                  <li>✅ Budget-friendly, fast deployment (4–6 weeks)</li>
+                  <li>✅ Built for non-tech teams – intuitive and no-code</li>
+                  <li>✅ Proven results – our clients report up to 50% reduction in manual reporting time within 30 days</li>
+                </ul>
+              </div>
             </div>
             <Card>
               <CardHeader>
@@ -136,7 +147,7 @@ const Index = () => {
         <section id="contact" className="container py-16 md:py-24">
           <div className="rounded-2xl p-8 md:p-12 bg-gradient-primary text-primary-foreground shadow-glow">
             <h2 className="font-display text-3xl md:text-4xl">Let’s explore what AI can do for your business</h2>
-            <p className="mt-2 text-primary-foreground/90 max-w-prose">Share your goals; we’ll propose a pragmatic path in 48 hours.</p>
+            <p className="mt-2 text-primary-foreground/90 max-w-prose">Share your goals and challenges; we’ll propose a pragmatic path in 48 hours.</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button variant="hero" asChild>
                 <a href="https://www.linkedin.com/company/laksh-x/" target="_blank" rel="noopener noreferrer">Contact on LinkedIn</a>

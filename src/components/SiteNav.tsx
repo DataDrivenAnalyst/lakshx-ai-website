@@ -11,7 +11,7 @@ const NAV_ITEMS = [
 ];
 
 export function SiteNav() {
-  const ORIGINAL_LOGO = "/lovable-uploads/4ea3e78f-a7a8-4f41-94ad-5155c0730eca.png";
+  const ORIGINAL_LOGO = "/lovable-uploads/1967b777-9d89-4121-90de-792d10b3bab5.png";
   const [logoSrc, setLogoSrc] = useState<string>(ORIGINAL_LOGO);
 
   useEffect(() => {
@@ -49,7 +49,7 @@ export function SiteNav() {
             <span className="font-display text-lg tracking-tight leading-none">
               Laksh<span className="text-[hsl(var(--accent))]">X</span>
             </span>
-            <span className="text-[10px] text-muted-foreground leading-none hidden md:block">
+            <span className="text-[9px] text-muted-foreground leading-none hidden md:block">
               Built for SMBs. Powered by Intelligence.
             </span>
           </span>
