@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import { BarChart3, Bot, Workflow } from "lucide-react";
+import heroIllustration from "@/assets/hero-illustration.png";
 
 const Index = () => {
   return (
@@ -33,10 +34,12 @@ const Index = () => {
             <div className="relative hidden md:block">
               <div className="absolute inset-0 rounded-2xl bg-gradient-primary opacity-20 blur-3xl" aria-hidden />
               <img
-                src="/lovable-uploads/47961337-1a1d-405f-ad2e-e7420ade9417.png"
-                alt="LakshX brand mark"
+                src={heroIllustration}
+                alt="Illustration of AI automations, agents, and analytics for SMBs"
                 loading="lazy"
-                className="mx-auto h-44 w-44 relative z-10 drop-shadow-sm"
+                decoding="async"
+                className="mx-auto relative z-10 w-full max-w-lg rounded-xl shadow-elegant"
+                sizes="(min-width: 768px) 480px, 100vw"
               />
             </div>
           </div>

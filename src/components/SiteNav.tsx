@@ -14,12 +14,19 @@ export function SiteNav() {
       <nav className="container flex items-center justify-between py-4">
         <a href="#" className="flex items-center gap-3">
           <img
-            src="/lovable-uploads/47961337-1a1d-405f-ad2e-e7420ade9417.png"
-            alt="LakshX logo"
+            src="/lovable-uploads/4ea3e78f-a7a8-4f41-94ad-5155c0730eca.png"
+            alt="LakshX logo mark"
             loading="lazy"
             className="h-8 w-8"
           />
-          <span className="font-display text-lg tracking-tight">LakshX</span>
+          <span className="flex flex-col">
+            <span className="font-display text-lg tracking-tight leading-none">
+              Laksh<span className="text-[hsl(var(--accent))]">X</span>
+            </span>
+            <span className="text-[10px] text-muted-foreground leading-none hidden md:block">
+              Built for SMBs. Powered by Intelligence.
+            </span>
+          </span>
         </a>
         <div className="hidden md:flex items-center gap-6">
           {NAV_ITEMS.map((item) => (
