@@ -1,6 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { useEffect, useState } from "react";
-import { removeBackground } from "@/lib/removeBackground";
 
 const NAV_ITEMS = [
   { href: "#solutions", label: "Solutions" },
@@ -11,36 +9,14 @@ const NAV_ITEMS = [
 ];
 
 export function SiteNav() {
-  const ORIGINAL_LOGO = "/lovable-uploads/1967b777-9d89-4121-90de-792d10b3bab5.png";
-  const [logoSrc, setLogoSrc] = useState<string>(ORIGINAL_LOGO);
-
-  useEffect(() => {
-    let isMounted = true;
-    const process = async () => {
-      try {
-        const img = new Image();
-        img.crossOrigin = 'anonymous';
-        img.src = ORIGINAL_LOGO;
-        await new Promise((res, rej) => { img.onload = () => res(true); img.onerror = rej; });
-        const blob = await removeBackground(img);
-        const reader = new FileReader();
-        const dataUrl = await new Promise<string>((res, rej) => { reader.onload = () => res(reader.result as string); reader.onerror = rej; reader.readAsDataURL(blob); });
-        if (isMounted) setLogoSrc(dataUrl);
-      } catch (e) {
-        console.warn('Background removal failed; using original logo', e);
-      }
-    };
-    process();
-    return () => { isMounted = false; };
-  }, []);
 
   return (
     <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-sm border-b">
       <nav className="container flex items-center justify-between py-4">
         <a href="#" className="flex items-center gap-2.5">
           <img
-            src={logoSrc}
-            alt="LakshX logomark, background removed"
+            src="/lovable-uploads/1967b777-9d89-4121-90de-792d10b3bab5.png"
+            alt="LakshX logomark"
             loading="lazy"
             decoding="async"
             className="h-6 w-6 md:h-7 md:w-7 object-contain"
