@@ -3,11 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import { BarChart3, Bot, Workflow } from "lucide-react";
-
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background text-foreground">
+  return <div className="min-h-screen bg-background text-foreground">
       <SiteNav />
 
       <main>
@@ -29,18 +26,11 @@ const Index = () => {
                   <a href="#solutions">See capabilities</a>
                 </Button>
               </div>
-              <div className="text-xs text-muted-foreground">Trusted approaches inspired by teams like Moative & Khatabook — crafted uniquely for your context.</div>
+              
             </div>
             <div className="relative hidden md:block">
               <div className="absolute inset-0 rounded-2xl bg-gradient-primary opacity-20 blur-3xl" aria-hidden />
-              <img
-                src="/lovable-uploads/46aa0e06-2714-4162-a3b2-ad82bf5415c7.png"
-                alt="Illustration of AI automations, agents, and analytics for SMBs"
-                loading="lazy"
-                decoding="async"
-                className="mx-auto relative z-10 w-full max-w-lg rounded-xl shadow-elegant"
-                sizes="(min-width: 768px) 480px, 100vw"
-              />
+              <img src="/lovable-uploads/46aa0e06-2714-4162-a3b2-ad82bf5415c7.png" alt="Illustration of AI automations, agents, and analytics for SMBs" loading="lazy" decoding="async" className="mx-auto relative z-10 w-full max-w-lg rounded-xl shadow-elegant" sizes="(min-width: 768px) 480px, 100vw" />
             </div>
           </div>
         </section>
@@ -86,20 +76,25 @@ const Index = () => {
             <p className="text-muted-foreground mt-2 max-w-2xl">A lean, collaborative cadence — ship value in weeks, not quarters.</p>
           </header>
           <div className="grid gap-6 md:grid-cols-4">
-            {[
-              { title: 'Discover', desc: 'Map goals, constraints and systems. Define KPIs.' },
-              { title: 'Design', desc: 'Solution blueprint, data flows, and guardrails.' },
-              { title: 'Build', desc: 'Implement, integrate, and observe performance.' },
-              { title: 'Iterate', desc: 'Refine with real usage; expand where ROI is clear.' },
-            ].map((step, i) => (
-              <Card key={step.title} className="hover-scale">
+            {[{
+            title: 'Discover',
+            desc: 'Map goals, constraints and systems. Define KPIs.'
+          }, {
+            title: 'Design',
+            desc: 'Solution blueprint, data flows, and guardrails.'
+          }, {
+            title: 'Build',
+            desc: 'Implement, integrate, and observe performance.'
+          }, {
+            title: 'Iterate',
+            desc: 'Refine with real usage; expand where ROI is clear.'
+          }].map((step, i) => <Card key={step.title} className="hover-scale">
                 <CardHeader>
                   <div className="w-9 h-9 rounded-full bg-secondary text-secondary-foreground grid place-items-center mb-2 font-semibold">{i + 1}</div>
                   <CardTitle>{step.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="text-sm text-muted-foreground">{step.desc}</CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </section>
 
@@ -110,9 +105,7 @@ const Index = () => {
             <p className="text-muted-foreground mt-2 max-w-2xl">We’ve worked across services, retail, tech-enabled ops and more. We integrate with the tools you already use.</p>
           </header>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 text-sm">
-            {['Professional Services','D2C & Retail','Healthcare','EdTech','FinTech','Logistics'].map((s) => (
-              <div key={s} className="rounded-md border bg-card px-3 py-2 text-center text-foreground/80">{s}</div>
-            ))}
+            {['Professional Services', 'D2C & Retail', 'Healthcare', 'EdTech', 'FinTech', 'Logistics'].map(s => <div key={s} className="rounded-md border bg-card px-3 py-2 text-center text-foreground/80">{s}</div>)}
           </div>
         </section>
 
@@ -157,8 +150,6 @@ const Index = () => {
       </main>
 
       <SiteFooter />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
