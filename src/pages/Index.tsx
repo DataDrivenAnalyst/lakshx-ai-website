@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import { BarChart3, Bot, Workflow } from "lucide-react";
-import heroIllustration from "@/assets/hero-illustration.png";
+
 
 const Index = () => {
   return (
@@ -34,7 +34,7 @@ const Index = () => {
             <div className="relative hidden md:block">
               <div className="absolute inset-0 rounded-2xl bg-gradient-primary opacity-20 blur-3xl" aria-hidden />
               <img
-                src={heroIllustration}
+                src="/lovable-uploads/46aa0e06-2714-4162-a3b2-ad82bf5415c7.png"
                 alt="Illustration of AI automations, agents, and analytics for SMBs"
                 loading="lazy"
                 decoding="async"
