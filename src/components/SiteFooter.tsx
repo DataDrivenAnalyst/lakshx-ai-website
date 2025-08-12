@@ -1,28 +1,6 @@
-import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Instagram, Linkedin, Youtube, X } from "lucide-react";
 
 export default function SiteFooter() {
-  const ORIGINAL_LOGO = "/lovable-uploads/1967b777-9d89-4121-90de-792d10b3bab5.png";
-  const [logoSrc, setLogoSrc] = useState<string>(ORIGINAL_LOGO);
-
-  useEffect(() => {
-    let isMounted = true;
-    const process = async () => {
-      try {
-        const img = new Image();
-        img.crossOrigin = 'anonymous';
-        img.src = ORIGINAL_LOGO;
-        await new Promise((res, rej) => { img.onload = () => res(true); img.onerror = rej; });
-        const blob = await removeBackground(img);
-        const reader = new FileReader();
-        const dataUrl = await new Promise<string>((res, rej) => { reader.onload = () => res(reader.result as string); reader.onerror = rej; reader.readAsDataURL(blob); });
-        if (isMounted) setLogoSrc(dataUrl);
-      } catch (e) {
-        console.warn('Background removal failed; using original logo', e);
-      }
-    };
-    process();
-    return () => { isMounted = false; };
-  }, []);
 
   return (
     <footer className="mt-24 border-t">
@@ -30,7 +8,7 @@ export default function SiteFooter() {
         <div>
           <a href="#" className="flex items-center gap-2.5">
             <img
-              src={logoSrc}
+              src="/lovable-uploads/1967b777-9d89-4121-90de-792d10b3bab5.png"
               alt="LakshX logomark, background removed"
               loading="lazy"
               decoding="async"
