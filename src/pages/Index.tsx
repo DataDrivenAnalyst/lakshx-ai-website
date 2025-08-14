@@ -167,9 +167,7 @@ const Index = () => {
         </section>
 
         {/* Temporary Favicon Processor */}
-        <section className="container py-8">
-          <FaviconProcessor />
-        </section>
+        
       </main>
 
       <SiteFooter />
