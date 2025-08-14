@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
+import { FaviconProcessor } from "@/components/FaviconProcessor";
 import { BarChart3, Bot, Workflow } from "lucide-react";
 const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
@@ -163,6 +164,11 @@ const Index = () => {
               </Button>
             </div>
           </div>
+        </section>
+
+        {/* Temporary Favicon Processor */}
+        <section className="container py-8">
+          <FaviconProcessor />
         </section>
       </main>
 
