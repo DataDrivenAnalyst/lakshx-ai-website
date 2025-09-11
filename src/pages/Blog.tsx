@@ -31,15 +31,14 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: "1",
-    title: "The Future of Small Business: AI-Powered Growth Strategies",
-    excerpt: "Discover how artificial intelligence is revolutionizing small business operations and creating unprecedented growth opportunities.",
-    content: "In today's rapidly evolving business landscape, artificial intelligence is no longer a luxury reserved for large corporations. Small and medium-sized businesses are leveraging AI to streamline operations, enhance customer experiences, and drive sustainable growth. From automated customer service to predictive analytics, AI tools are becoming more accessible and affordable for SMBs.",
+    title: "AI Automation As A Service",
+    excerpt: "Introducing AIAaaS for SMBs - transforming operational chaos into clarity through intelligent automation workflows that eliminate manual tasks and enable faster decision-making.",
+    content: "You've heard of SaaS. But here's what's next: AI Automation as a Service (AIAaaS). In a world where decisions must be made fast and with precision, small and medium businesses can no longer afford to waste hours—or days—just making sense of their data. Especially when that data lives across dozens of platforms and comes in hundreds of formats. Take the case of a mid-sized FMCG company that sells across multiple e-commerce platforms. Every month, they struggle to consolidate and analyze massive volumes of tertiary sales and ad spend data to inform their pricing and marketing decisions. Now, with our custom-built AIAaaS solution, their reality has changed: Every week, over 500 files of raw, messy data are automatically harmonized, validated, and analyzed in under an hour. A clean, smart Ecommerce Performance Dashboard is delivered by Monday 9 AM, just in time for the management's 10:30 AM strategy huddle. AI Agents and ML models work in the background to standardize SKUs, track campaign performance, provide insights and even flag anomalies in ad spend or regional sales. At LakshX, we specialize in building AI and ML-powered automation workflows that turn operational chaos into clarity for SMBs. Because data doesn't create value. Actionable data does.",
     author: "LakshX Team",
-    date: "2024-12-09",
-    category: "AI Strategy",
-    readTime: "5 min read",
-    image: blog1Image,
-    source: "https://www.linkedin.com/feed/update/urn:li:activity:7355119970478907392"
+    date: "2024-07-27",
+    category: "Business Automation",
+    readTime: "6 min read",
+    image: blog1Image
   },
   {
     id: "2", 
