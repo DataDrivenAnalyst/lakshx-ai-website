@@ -7,6 +7,16 @@ import { BarChart3, Bot, Workflow } from "lucide-react";
 const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
       <SiteNav />
+      
+      {/* Attention Banner */}
+      <div className="bg-orange-500 text-white py-3 px-4 text-center">
+        <a 
+          href="/consultation" 
+          className="inline-block font-medium hover:underline transition-all duration-200"
+        >
+          Get a complimentary 30-minute AI Automation Assessment
+        </a>
+      </div>
 
       <main>
         {/* Hero */}
