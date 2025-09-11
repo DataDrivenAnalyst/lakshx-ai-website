@@ -149,19 +149,23 @@ const Index = () => {
           <div className="rounded-2xl p-8 md:p-12 bg-gradient-primary text-primary-foreground shadow-glow">
             <h2 className="font-display text-3xl md:text-4xl">Let’s explore what AI can do for your business</h2>
             <p className="mt-2 text-primary-foreground/90 max-w-prose">Share your goals and challenges; we’ll propose a pragmatic path in 48 hours.</p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Button variant="accent" asChild>
-                <a href="/consultation">Schedule a consultation</a>
-              </Button>
-              <Button variant="hero" asChild>
-                <a href="https://www.linkedin.com/company/laksh-x/" target="_blank" rel="noopener noreferrer">Follow us on LinkedIn</a>
-              </Button>
-              <Button variant="secondary" asChild>
-                <a href="tel:+919910635419">Call +91 99106 35419</a>
-              </Button>
-              <Button variant="secondary" asChild>
-                <a href="mailto:info@lakshx.com">Email info@lakshx.com</a>
-              </Button>
+            <div className="mt-6 space-y-3">
+              <div className="flex flex-wrap gap-3">
+                <Button variant="accent" asChild>
+                  <a href="/consultation">Schedule a consultation</a>
+                </Button>
+                <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
+                  <a href="https://www.linkedin.com/company/laksh-x/" target="_blank" rel="noopener noreferrer">Follow us on LinkedIn</a>
+                </Button>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <Button variant="secondary" asChild>
+                  <a href="tel:+919910635419">Call +91 99106 35419</a>
+                </Button>
+                <Button variant="secondary" asChild>
+                  <a href="mailto:info@lakshx.com">Email info@lakshx.com</a>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
