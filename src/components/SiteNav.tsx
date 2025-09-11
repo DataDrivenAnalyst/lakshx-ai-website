@@ -39,8 +39,8 @@ export function SiteNav() {
         </div>
         <div className="flex items-center gap-3">
           <Button asChild variant="accent" className="hidden sm:inline-flex">
-            <a href="https://www.linkedin.com/company/laksh-x/" target="_blank" rel="noopener noreferrer" aria-label="Contact LakshX on LinkedIn">
-              Talk to us
+            <a href="/consultation" aria-label="Schedule a consultation with LakshX">
+              Schedule a consultation
             </a>
           </Button>
         </div>
