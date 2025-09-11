@@ -5,6 +5,7 @@ const NAV_ITEMS = [
   { href: "#process", label: "Process" },
   { href: "#industries", label: "Industries" },
   { href: "#about", label: "About" },
+  { href: "/blog", label: "Blog" },
   { href: "#contact", label: "Contact" },
 ];
 
