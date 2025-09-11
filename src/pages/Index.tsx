@@ -153,14 +153,14 @@ const Index = () => {
               <Button variant="accent" asChild>
                 <a href="/consultation">Schedule a consultation</a>
               </Button>
+              <Button variant="hero" asChild>
+                <a href="https://www.linkedin.com/company/laksh-x/" target="_blank" rel="noopener noreferrer">Follow us on LinkedIn</a>
+              </Button>
               <Button variant="secondary" asChild>
                 <a href="tel:+919910635419">Call +91 99106 35419</a>
               </Button>
               <Button variant="secondary" asChild>
                 <a href="mailto:info@lakshx.com">Email info@lakshx.com</a>
-              </Button>
-              <Button variant="hero" asChild>
-                <a href="https://www.linkedin.com/company/laksh-x/" target="_blank" rel="noopener noreferrer">Follow us on LinkedIn</a>
               </Button>
             </div>
           </div>
