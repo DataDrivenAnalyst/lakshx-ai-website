@@ -177,7 +177,7 @@ const Index = () => {
                 <ul className="mt-2 text-sm text-muted-foreground space-y-1">
                   <li>✅ Budget-friendly, fast deployment (4–6 weeks)</li>
                   <li>✅ Built for non-tech teams – intuitive and no-code</li>
-                  <li>✅ Proven results – our clients report up to 50% reduction in manual reporting time within 30 days</li>
+                  <li>✅ Proven results – our clients report up to 50% reduction in manual effort within 30 days</li>
                 </ul>
               </div>
             </div>
