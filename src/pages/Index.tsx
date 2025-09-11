@@ -9,7 +9,7 @@ const Index = () => {
       <SiteNav />
       
       {/* Attention Banner */}
-      <div className="bg-orange-500 text-white py-3 px-4 text-center">
+      <div className="bg-accent text-accent-foreground py-3 px-4 text-center">
         <a 
           href="/consultation" 
           className="inline-block font-medium hover:underline transition-all duration-200"
