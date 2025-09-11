@@ -1,9 +1,11 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Calendar, ArrowRight, User } from "lucide-react";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
+import { useState } from "react";
 
 // Import blog images
 import blog1Image from "@/assets/blog-1.jpg";
@@ -127,6 +129,8 @@ const blogPosts: BlogPost[] = [
 const categories = ["All", "AI Strategy", "Data Analytics", "Customer Analytics", "Business Intelligence", "Data Science", "Sales Analytics"];
 
 export default function Blog() {
+  const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
+
   return (
     <>
       <SiteNav />
@@ -184,10 +188,47 @@ export default function Blog() {
                       </div>
                     </div>
                     <div className="mt-4">
-                      <Button variant="ghost" className="w-full group/btn">
-                        Read More
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                      </Button>
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Button 
+                            variant="ghost" 
+                            className="w-full group/btn"
+                            onClick={() => setSelectedPost(post)}
+                          >
+                            Read More
+                            <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+                          <DialogHeader>
+                            <DialogTitle className="text-2xl font-bold">{post.title}</DialogTitle>
+                          </DialogHeader>
+                          <div className="space-y-4">
+                            <div className="aspect-video overflow-hidden rounded-lg">
+                              <img
+                                src={post.image}
+                                alt={post.title}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                            <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                              <div className="flex items-center gap-2">
+                                <User className="h-4 w-4" />
+                                <span>{post.author}</span>
+                              </div>
+                              <div className="flex items-center gap-2">
+                                <Calendar className="h-4 w-4" />
+                                <span>{new Date(post.date).toLocaleDateString()}</span>
+                              </div>
+                              <Badge variant="secondary">{post.category}</Badge>
+                              <span>{post.readTime}</span>
+                            </div>
+                            <div className="prose prose-lg max-w-none">
+                              <p className="whitespace-pre-wrap leading-relaxed">{post.content}</p>
+                            </div>
+                          </div>
+                        </DialogContent>
+                      </Dialog>
                     </div>
                   </CardContent>
                 </Card>
