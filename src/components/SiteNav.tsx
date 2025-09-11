@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
 
 const NAV_ITEMS = [
-  { href: "#solutions", label: "Solutions" },
-  { href: "#process", label: "Process" },
-  { href: "#industries", label: "Industries" },
-  { href: "#about", label: "About" },
+  { href: "/#solutions", label: "Solutions" },
+  { href: "/#process", label: "Process" },
+  { href: "/#industries", label: "Industries" },
+  { href: "/#about", label: "About" },
   { href: "/blog", label: "Blog" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function SiteNav() {
