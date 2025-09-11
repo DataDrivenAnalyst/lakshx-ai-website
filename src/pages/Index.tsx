@@ -1,21 +1,62 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import { FaviconProcessor } from "@/components/FaviconProcessor";
 import { BarChart3, Bot, Workflow } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
 const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
       <SiteNav />
       
-      {/* Attention Banner */}
-      <div className="bg-accent text-accent-foreground py-3 px-4 text-center">
-        <a 
-          href="/consultation" 
-          className="inline-block font-medium hover:underline transition-all duration-200"
+      {/* Attention Banner Carousel */}
+      <div className="bg-accent text-accent-foreground py-3 px-4">
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 4000,
+            }),
+          ]}
+          className="w-full max-w-none"
         >
-          Get a complimentary 30-minute AI Automation Assessment
-        </a>
+          <CarouselContent>
+            <CarouselItem>
+              <div className="text-center">
+                <a 
+                  href="/consultation" 
+                  className="inline-block font-medium hover:underline transition-all duration-200"
+                >
+                  Get a complimentary 30-minute AI Automation Assessment
+                </a>
+              </div>
+            </CarouselItem>
+            <CarouselItem>
+              <div className="text-center">
+                <a 
+                  href="/consultation" 
+                  className="inline-block font-medium hover:underline transition-all duration-200"
+                >
+                  Transform your business with AI-powered automation solutions
+                </a>
+              </div>
+            </CarouselItem>
+            <CarouselItem>
+              <div className="text-center">
+                <a 
+                  href="/consultation" 
+                  className="inline-block font-medium hover:underline transition-all duration-200"
+                >
+                  Join SMBs saving 50% on manual reporting time with our AI systems
+                </a>
+              </div>
+            </CarouselItem>
+          </CarouselContent>
+        </Carousel>
       </div>
 
       <main>
