@@ -51,7 +51,7 @@ const Index = () => {
                   href="/consultation" 
                   className="inline-block font-medium hover:underline transition-all duration-200"
                 >
-                  Join SMBs saving 50% on manual reporting time with our AI systems
+                  Join SMBs saving 50% on manual effort with our AI systems
                 </a>
               </div>
             </CarouselItem>
