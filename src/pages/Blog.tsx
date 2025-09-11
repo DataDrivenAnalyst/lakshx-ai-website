@@ -53,15 +53,14 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: "3",
-    title: "Transforming Customer Experience with Smart Analytics",
-    excerpt: "Explore how analytics can help businesses understand their customers better and deliver personalized experiences.",
-    content: "Customer experience has become a key differentiator in today's competitive market. Smart analytics tools enable businesses to track customer interactions, preferences, and behaviors across multiple touchpoints. This data helps create personalized experiences that drive customer satisfaction and loyalty.",
-    author: "LakshX Team", 
-    date: "2024-10-24",
-    category: "Customer Analytics",
-    readTime: "6 min read",
-    image: blog3Image,
-    source: "https://www.linkedin.com/feed/update/urn:li:activity:7315619160519036928"
+    title: "ERP is not a panacea for SMBs",
+    excerpt: "Many SMB owners invest in ERP systems believing they've found the magic bullet for growth. While ERP organizes data, it doesn't provide actionable insights—that's where business analysis comes in.",
+    content: "Many small and medium business (SMB) owners invest in Enterprise Resource Planning (ERP) systems, believing they've found the magic bullet for business growth. While ERP systems are excellent for organizing data across functions like finance, HR, and supply chain, they are not designed to offer actionable business insights. An ERP organizes your data; it doesn't tell you what that data means or how to act on it. This is where business analysis comes in. A manufacturing client we worked with had recently implemented an ERP system. While it helped streamline operations and reduce paperwork, they still struggled to answer key business questions: Which product lines are the most profitable? How can we reduce lead times? Where are we losing customers? Which customers are most valuable? The ERP system had all the data, but extracting insights required applying business analytics. By integrating data analytics tools on top of their ERP, we helped them identify patterns, reduce inventory, and increase revenue. Business analysis turns data into insights, enables strategic decision-making, and explains the 'why' behind what happened. Your ERP system is an essential tool for organizing business operations, but it's not the full picture. Business analysis is the key to unlocking the value hidden within your data and turning it into strategic actions that drive growth.",
+    author: "LakshX Team",
+    date: "2024-04-09",
+    category: "Business Intelligence",
+    readTime: "5 min read",
+    image: blog3Image
   },
   {
     id: "4",
