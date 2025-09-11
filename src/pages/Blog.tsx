@@ -72,8 +72,8 @@ Why AIAaaS Matters for SMBs
 Whether you're in FMCG, manufacturing, distribution, retail, or real estate, your business is generating data every day. But are you using it? Are your teams spending more time collecting data—or analyzing it?
 
 AI Automation enables you to:
-✅ Eliminate repetitive, manual tasks
-✅ Improve accuracy and speed of operations
+✅ Eliminate repetitive, manual reporting tasks
+✅ Improve accuracy and speed of reporting
 ✅ Free up your team for strategic thinking
 ✅ Enable better, faster decision-making
 
