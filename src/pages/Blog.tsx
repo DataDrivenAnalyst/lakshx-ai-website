@@ -42,15 +42,14 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: "2", 
-    title: "Data-Driven Decision Making: A Game Changer for SMBs",
-    excerpt: "Learn how small businesses can harness the power of data analytics to make informed decisions and stay competitive.",
-    content: "Data-driven decision making is transforming how small businesses operate. By collecting, analyzing, and acting on data insights, SMBs can optimize their operations, understand customer behavior, and identify new market opportunities. This approach leads to more effective strategies and improved business outcomes.",
+    title: "What do Cricket and SMBs have in common?",
+    excerpt: "Innovating with data—and using insights to their advantage. Just as cricket teams use data to plan strategy, businesses can use analytics to read the game and win decisively.",
+    content: "At the recent WAVES Summit in Mumbai, former Indian cricket captain and coach Anil Kumble shared a powerful perspective: 'Cricket has always produced data. Every ball produces millions of data points.' If you run a small or medium business, this idea should strike a chord. Every sale, lead, delay, complaint, and click your business generates is data. The question is—are you using it to your advantage? We worked with an industrial goods manufacturer who seemed to be on a growth track with 40% YoY customer growth. But our analysis revealed the true picture: Average order value had declined sharply, high-value customers had dropped by half, and monthly sales teams achieving less than 30% of targets were creating compounding losses. These insights weren't visible in their ERP or Excel MIS, but became crystal clear with business analytics. Business analysis helps you spot what's working, identify missed opportunities, predict future outcomes, and course-correct early. At LakshX, we help SMBs transform their raw data into insights that lead to smarter decisions, stronger performance, and sustainable growth.",
     author: "LakshX Team",
-    date: "2024-11-11",
-    category: "Data Analytics",
-    readTime: "4 min read",
-    image: blog2Image,
-    source: "https://www.linkedin.com/feed/update/urn:li:activity:7330126855175393281"
+    date: "2024-05-19",
+    category: "Business Analytics",
+    readTime: "5 min read",
+    image: blog2Image
   },
   {
     id: "3",
