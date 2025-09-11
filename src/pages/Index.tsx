@@ -21,7 +21,7 @@ const Index = () => {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Button variant="hero" className="hover-scale" asChild>
-                  <a href="mailto:info@lakshx.com?subject=Discovery%20Chat">Book a discovery chat</a>
+                  <a href="/consultation">Book a discovery chat</a>
                 </Button>
                 <Button variant="accent" className="hover-scale" asChild>
                   <a href="#solutions">See capabilities</a>
