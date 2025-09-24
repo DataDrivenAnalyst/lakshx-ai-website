@@ -14,7 +14,7 @@ export default function SiteFooter() {
               </span>
             </span>
           </a>
-          <p className="mt-3 text-sm text-muted-foreground max-w-prose">Bespoke AI automations, agents, and analytics for s</p>
+          <p className="mt-3 text-sm text-muted-foreground max-w-prose">Bespoke AI automations, agents, and analytics for small and medium business</p>
           <p className="mt-2 text-xs text-muted-foreground">© {new Date().getFullYear()} LakshX. All rights reserved.</p>
         </div>
         <div className="md:justify-self-end">
