@@ -93,7 +93,7 @@ Because data doesn't create value. Actionable data does.
     author: "LakshX Team",
     date: "2025-07-27",
     category: "Business Automation",
-    readTime: "6 min read",
+    readTime: "3 min read",
     image: blog1Image
   },
   {
