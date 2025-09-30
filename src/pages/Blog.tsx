@@ -11,11 +11,6 @@ import { useState } from "react";
 import blog1Image from "@/assets/blog-1.jpg";
 import blog2Image from "@/assets/blog-2.jpg";
 import blog3Image from "@/assets/blog-3.jpg";
-import blog4Image from "@/assets/blog-4.jpg";
-import blog5Image from "@/assets/blog-5.jpg";
-import blog6Image from "@/assets/blog-6.jpg";
-import blog7Image from "@/assets/blog-7.jpg";
-import blog8Image from "@/assets/blog-8.jpg";
 
 interface BlogPost {
   id: string;
@@ -208,66 +203,6 @@ Connect with us at +91 99106 35419 or info@lakshx.com.`,
     category: "Business Intelligence",
     readTime: "3 min read",
     image: blog3Image
-  },
-  {
-    id: "4",
-    title: "The ROI Revolution: Measuring Success in the Digital Age",
-    excerpt: "Understand how to measure and optimize return on investment for your digital transformation initiatives.",
-    content: "Measuring ROI in the digital age requires new metrics and methodologies. Traditional financial metrics are no longer sufficient to capture the full value of digital investments. Businesses need to consider factors like customer lifetime value, operational efficiency gains, and competitive advantages.",
-    author: "LakshX Team",
-    date: "2024-09-17",
-    category: "Business Intelligence", 
-    readTime: "7 min read",
-    image: blog4Image,
-    source: "https://www.linkedin.com/feed/update/urn:li:activity:7292797344343830528"
-  },
-  {
-    id: "5",
-    title: "AI, Data Analytics, and Data Science: Understanding the Ecosystem",
-    excerpt: "A comprehensive guide to understanding the interconnected world of AI, data analytics, and data science for businesses.",
-    content: "The modern business landscape is increasingly driven by data. Understanding the relationship between AI, data analytics, and data science is crucial for businesses looking to leverage these technologies effectively. Each discipline plays a unique role in transforming raw data into actionable business insights.",
-    author: "Kalaat Mak Consulting",
-    date: "2024-08-15",
-    category: "Data Science",
-    readTime: "8 min read", 
-    image: blog5Image,
-    source: "https://kalaatmakconsulting.com/explore-2/blog-ai-data-analytics-data-science/"
-  },
-  {
-    id: "6",
-    title: "Sales Analytics: Boosting Revenue Through Data Insights",
-    excerpt: "Learn how sales analytics can help identify opportunities, optimize processes, and drive revenue growth.",
-    content: "Sales analytics transforms raw sales data into actionable insights that drive revenue growth. By analyzing sales patterns, customer behavior, and market trends, businesses can optimize their sales processes, identify high-value opportunities, and improve conversion rates.",
-    author: "Kalaat Mak Consulting",
-    date: "2024-07-22",
-    category: "Sales Analytics",
-    readTime: "6 min read",
-    image: blog6Image,
-    source: "https://kalaatmakconsulting.com/explore-2/blog-sales-analytics/"
-  },
-  {
-    id: "7", 
-    title: "Customer Segmentation: The Key to Targeted Marketing Success",
-    excerpt: "Discover how data analytics can help you segment customers effectively and create targeted marketing campaigns.",
-    content: "Customer segmentation using data analytics enables businesses to understand their diverse customer base and create targeted marketing strategies. By grouping customers based on behavior, preferences, and demographics, businesses can deliver more relevant experiences and improve marketing ROI.",
-    author: "Kalaat Mak Consulting",
-    date: "2024-06-18",
-    category: "Customer Analytics",
-    readTime: "5 min read",
-    image: blog7Image,
-    source: "https://kalaatmakconsulting.com/explore-2/blog-data-analytics-customer-segmentation/"
-  },
-  {
-    id: "8",
-    title: "Data Analytics vs MIS: Understanding the Difference",
-    excerpt: "Clarify the distinctions between data analytics and management information systems to make informed technology decisions.",
-    content: "While both data analytics and Management Information Systems (MIS) deal with data, they serve different purposes in modern business operations. Understanding their unique roles, capabilities, and applications helps businesses choose the right approach for their specific needs and objectives.",
-    author: "Kalaat Mak Consulting", 
-    date: "2024-05-25",
-    category: "Business Intelligence",
-    readTime: "4 min read",
-    image: blog8Image,
-    source: "https://kalaatmakconsulting.com/explore-2/blog-data-analytics-vs-mis/"
   }
 ];
 
