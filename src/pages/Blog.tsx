@@ -109,7 +109,7 @@ At the recent WAVES Summit in Mumbai, former Indian cricket captain and coach An
 
 "Cricket has always produced data. Every ball produces millions of data points."
 
-(Watch from 19'45" onwards on YouTube) 
+(Watch from [19'45" onwards](https://www.youtube.com/watch?v=WW6whsjo0N4) on YouTube) 
 
 If you run a small or medium business, this idea should strike a chord. Every sale, lead, delay, complaint, and click your business generates is data. The question is—are you using it to your advantage?
 
@@ -330,7 +330,15 @@ export default function Blog() {
                               <span>{post.readTime}</span>
                             </div>
                             <div className="prose prose-lg max-w-none">
-                              <p className="whitespace-pre-wrap leading-relaxed">{post.content}</p>
+                              <div 
+                                className="whitespace-pre-wrap leading-relaxed"
+                                dangerouslySetInnerHTML={{
+                                  __html: post.content.replace(
+                                    /\[([^\]]+)\]\(([^)]+)\)/g,
+                                    '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">$1</a>'
+                                  )
+                                }}
+                              />
                             </div>
                           </div>
                         </DialogContent>
