@@ -100,11 +100,63 @@ Because data doesn't create value. Actionable data does.
     id: "2", 
     title: "What do Cricket and SMBs have in common?",
     excerpt: "Innovating with data—and using insights to their advantage. Just as cricket teams use data to plan strategy, businesses can use analytics to read the game and win decisively.",
-    content: "At the recent WAVES Summit in Mumbai, former Indian cricket captain and coach Anil Kumble shared a powerful perspective: 'Cricket has always produced data. Every ball produces millions of data points.' If you run a small or medium business, this idea should strike a chord. Every sale, lead, delay, complaint, and click your business generates is data. The question is—are you using it to your advantage? We worked with an industrial goods manufacturer who seemed to be on a growth track with 40% YoY customer growth. But our analysis revealed the true picture: Average order value had declined sharply, high-value customers had dropped by half, and monthly sales teams achieving less than 30% of targets were creating compounding losses. These insights weren't visible in their ERP or Excel MIS, but became crystal clear with business analytics. Business analysis helps you spot what's working, identify missed opportunities, predict future outcomes, and course-correct early. At LakshX, we help SMBs transform their raw data into insights that lead to smarter decisions, stronger performance, and sustainable growth.",
+    content: `What do Cricket and SMBs have in common?
+May 19, 2025
+
+Innovating with data—and using insights to their advantage.
+
+At the recent WAVES Summit in Mumbai, former Indian cricket captain and coach Anil Kumble shared a powerful perspective:
+
+"Cricket has always produced data. Every ball produces millions of data points."
+
+(Watch from 19'45" onwards on YouTube) 
+
+If you run a small or medium business, this idea should strike a chord. Every sale, lead, delay, complaint, and click your business generates is data. The question is—are you using it to your advantage?
+
+Just as a cricket team uses pitch reports, player stats, and match conditions to plan their strategy, businesses can use business analytics to read the game, adjust mid-innings, and win decisively.
+
+Real-world Example from Our Work
+
+At the end of FY25, we worked with an industrial goods manufacturer who, at first glance, seemed to be on a growth track. Their customer count was up by 40% YoY, and on paper, things looked good.
+
+But once we ran an in-depth analysis of their sales data, the true picture emerged:
+
+Average order value had declined sharply, showing a skew toward low-value customers.
+A year-on-year comparison revealed that the number of high-value customers had dropped by half—a red flag that would've gone unnoticed in standard reports.
+In another layer of analysis, we found that monthly sales teams who achieved less than 30% of their targets consistently dragged down the year-end performance below 40%—creating avoidable, compounding losses.
+
+These insights weren't visible in their ERP or Excel MIS. But they became crystal clear with business analytics.
+
+Why Business Analysis Matters
+
+ERPs are excellent at organizing data—they track inventory, sales, HR, finances, and more. But they don't explain trends, patterns, or risks. That's where business analytics comes in.
+
+Business analysis helps you:
+
+Spot what's working—and what's not.
+Identify missed opportunities—like profitable customers who aren't buying anymore.
+Predict future outcomes—based on trends and behaviors.
+Course-correct early, just like a cricket captain adjusting field placement after the first few overs.
+
+If You Know, You Can Act
+
+In cricket, when you see the pitch slowing down, you change your bowling strategy. In business, if your data tells you which products are stagnating or which regions are underperforming—you have a chance to adapt before it's too late.
+
+That's the power of business analysis. It turns unknowns into action.
+
+Final Thought
+
+If you're running your SMB without business analytics, it's like playing cricket blindfolded. At LakshX, we help SMBs transform their raw data into insights that lead to smarter decisions, stronger performance, and sustainable growth.
+
+Because data alone isn't power. Insightful data is.
+
+📞 +91 99106 35419 | 📩 info@lakshx.com
+
+#SMBGrowth #BusinessAnalytics #CricketAndBusiness #DataForDecisions #ERPvsAnalytics #LakshXforSMBGrowth #MakeDataWork #SmallBusinessIndia #FamilyBusiness #FamilyOwned #FamilyRunBusiness #GenerationalBusiness #LegacyBusiness`,
     author: "LakshX Team",
-    date: "2024-05-19",
+    date: "2025-05-19",
     category: "Business Analytics",
-    readTime: "5 min read",
+    readTime: "3 min read",
     image: blog2Image
   },
   {
