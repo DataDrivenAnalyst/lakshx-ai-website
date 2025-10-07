@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 const repoName = 'your-repo-name';
 
 export default defineConfig(({ mode }) => ({
-  base: `/${datadrivenanalyst}/`,
+  base: `/${DataDrivenAnalyst}/`,
   server: {
     host: "::",
     port: 8080,
