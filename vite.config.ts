@@ -4,10 +4,10 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // Replace this with your actual GitHub repo name
-const repoName = 'your-repo-name';
+const repoName = 'lakshx-ai-website';
 
 export default defineConfig(({ mode }) => ({
-  base: `/${DataDrivenAnalyst}/`,
+  base: `/${repoName}/`,
   server: {
     host: "::",
     port: 8080,
