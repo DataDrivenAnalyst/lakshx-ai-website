@@ -8,6 +8,9 @@ import Blog from "./pages/Blog";
 import Consultation from "./pages/Consultation";
 import NotFound from "./pages/NotFound";
 
+// ✅ Your repo name as the base path
+const basename = "/lakshx-ai-website";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -15,12 +18,12 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* 👇 Pass basename here */}
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/consultation" element={<Consultation />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
