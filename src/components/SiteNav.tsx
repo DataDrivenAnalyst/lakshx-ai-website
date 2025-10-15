@@ -1,3 +1,4 @@
+// src/components/SiteNav.tsx
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -11,13 +12,12 @@ const NAV_ITEMS = [
 ];
 
 export function SiteNav() {
-  // Use base URL for GitHub Pages image loading
   const baseUrl = import.meta.env.BASE_URL || "/";
 
   return (
     <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-sm border-b">
       <nav className="container flex items-center justify-between py-4">
-        {/* Logo - Link to home */}
+        {/* Logo link */}
         <Link to="/" className="flex items-center gap-2.5">
           <img
             src={`${baseUrl}lovable-uploads/1967b777-9d89-4121-90de-792d10b3bab5.png`}
@@ -36,13 +36,12 @@ export function SiteNav() {
           </span>
         </Link>
 
-        {/* Navigation Links */}
+        {/* Navigation items */}
         <div className="hidden md:flex items-center gap-6">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.to}
               to={item.to}
-              reloadDocument={item.to.includes("#")} // Forces full page reload for GitHub Pages anchor links
               className="text-sm text-foreground/80 hover:text-foreground story-link"
             >
               {item.label}
@@ -50,7 +49,7 @@ export function SiteNav() {
           ))}
         </div>
 
-        {/* Consultation Button */}
+        {/* Consultation button */}
         <div className="flex items-center gap-3">
           <Button asChild variant="accent" className="hidden sm:inline-flex">
             <Link to="/consultation" aria-label="Schedule a consultation with LakshX">
