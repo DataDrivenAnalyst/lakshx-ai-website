@@ -5,6 +5,7 @@ import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import { BarChart3, Bot, Workflow } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
+import { Link } from "react-router-dom";
 
 const baseUrl = import.meta.env.BASE_URL || "/";
 
@@ -58,7 +59,7 @@ const Index = () => {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Button variant="hero" className="hover-scale" asChild>
-                  <a href="/consultation">Book a discovery chat</a>
+                  <Link to="/consultation">Book a discovery chat</Link>
                 </Button>
                 <Button variant="accent" className="hover-scale" asChild>
                   <a href="#solutions">See capabilities</a>
@@ -228,7 +229,7 @@ const Index = () => {
             <div className="mt-6 space-y-3">
               <div className="flex flex-wrap gap-3">
                 <Button variant="accent" asChild>
-                  <a href="/consultation">Schedule a consultation</a>
+                  <Link to="/consultation">Schedule a consultation</Link>
                 </Button>
                 <Button
                   variant="outline"

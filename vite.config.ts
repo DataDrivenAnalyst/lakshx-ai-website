@@ -5,9 +5,11 @@ import { componentTagger } from "lovable-tagger";
 
 // Replace this with your actual GitHub repo name
 const repoName = 'lakshx-ai-website';
+const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
 
 export default defineConfig(({ mode }) => ({
-  base: `/${repoName}/`, // ✅ This sets correct GitHub Pages path
+  // Use repo base on GitHub Pages, root base elsewhere (Lovable, custom domains)
+  base: isGithubActions ? `/${repoName}/` : '/',
   server: {
     host: "::",
     port: 8080,

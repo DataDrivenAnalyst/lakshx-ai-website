@@ -12,7 +12,7 @@ import NotFound from "./pages/NotFound";
 import { ScrollToHash } from "@/components/ScrollToHash";
 
 // Your repo name for base
-const basename = "/lakshx-ai-website";
+const basename = (import.meta.env.BASE_URL?.replace(/\/$/, "")) || "";
 
 const queryClient = new QueryClient();
 
